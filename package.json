@@ -1,0 +1,42 @@
+{
+  "name": "portfolio1.3",
+  "version": "1.0.0",
+  "description": "Kennedy Mugendi's Portfolio with Admin Analytics",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build:css": "tailwindcss build public/css/tailwind.css -o public/css/styles.css",
+    "watch:css": "tailwindcss build public/css/tailwind.css -o public/css/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "express",
+    "redis",
+    "admin-panel"
+  ],
+  "author": "Kennedy Mugendi",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-basic-auth": "^1.2.1",
+    "geoip-lite": "^1.4.6",
+    "helmet": "^7.1.0",
+    "redis": "^4.6.5",
+    "useragent": "^2.3.0",
+    "express-rate-limit": "^6.7.0",
+    "tailwindcss": "^3.3.0",
+    "chart.js": "^4.4.0",
+    "postcss": "^8.4.21",
+    "autoprefixer": "^10.4.14"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
